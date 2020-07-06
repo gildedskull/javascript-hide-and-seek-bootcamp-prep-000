@@ -15,7 +15,37 @@ describe('index', () => {
   describe('deepestChild()', () => {
     it('returns the most deeply nested child in #grand-node', () => {
       console.log(deepestChild().innerHTML)
-      expect(deepestChild()).to.equal(document.querySelector('#grand-node div div div div'))
+      expect(deepestChild()).to.equal(
+  1) index
+       deepestChild()
+         returns the most deeply nested child in #grand-node:
+
+      AssertionError: expected { Object (0, 1, ...) } to equal { Object () }
+      + expected - actual
+
+      -{
+      -  "0": {}
+      -  "1": {}
+      -  "2": {}
+      -  "3": {}
+      -}
+      +{}
+
+      at Context.it (test/index-test.js:18:33)
+
+  2) index
+       increaseRankBy(n)
+         increases ranks in .ranked-list by n:
+
+      AssertionError: expected 3 to equal 4
+      + expected - actual
+
+      -3
+      +4
+
+      at Context.it (test/index-test.js:35:52)
+
+'))
     })
   })
 
