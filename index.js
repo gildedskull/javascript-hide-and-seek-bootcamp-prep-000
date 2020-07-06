@@ -7,10 +7,10 @@ function nestedTarget() {
 }
 
 function increaseRankBy(n) {
-  var lis = document.querySelectorAll('.ranked-list li');
+  var lis = document.querySelectorAll('.ranked-list');
   
   for (let i = 0; i < lis.length; i++) {
-    parseInt(lis[i].innerHTML) = (i+n);
+    lis[i].innerHTML = parseInt((i+n));
     return lis;
   }
 }
